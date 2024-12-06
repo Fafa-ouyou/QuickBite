@@ -1,0 +1,73 @@
+.filtre_categorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.filtre {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 200px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select option {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+select option:hover {
+  background-color: #e9ecef;
+}
+
+.menu .menu-title{
+  text-align: center;
+  margin-top: 10px;
+}
+/* Container principal du menu */
+.menu-items {
+  display: flex;                  /* Utilisation de Flexbox */
+  flex-wrap: wrap;                /* Permet aux éléments de se répartir sur plusieurs lignes si nécessaire */
+  justify-content: space-around;  /* Répartit les éléments avec un espace uniforme entre eux */
+  gap: 20px;                      /* Ajoute un espace entre les éléments */
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* Style pour chaque item dans le menu */
+.menu-items .item {
+  flex: 1 1 200px;                /* Chaque élément peut occuper une largeur flexible avec un minimum de 200px */
+  max-width: 250px;               /* Limite la largeur maximale des éléments */
+  margin-bottom: 20px;            /* Espacement en bas des éléments */
+}
+
+/* Optionnel : ajouter un effet responsive pour les petits écrans */
+@media (max-width: 768px) {
+  .menu-items {
+    justify-content: center;      /* Aligne les éléments au centre sur les petits écrans */
+  }
+
+  .menu-items .item {
+    flex: 1 1 100%;               /* Chaque item prend toute la largeur disponible sur un petit écran */
+    max-width: 100%;              /* S'assure que l'élément ne dépasse pas la largeur de l'écran */
+  }
+}

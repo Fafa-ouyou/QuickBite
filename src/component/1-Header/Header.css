@@ -1,0 +1,123 @@
+header.flex{
+    justify-content: space-between;
+    padding: 14px 10px;
+    background-color:#121619;
+}
+
+header.flex img{
+    width: 90px;
+    height: auto;
+}
+header.flex h3{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 0px;
+    position: absolute;
+    left: 100px;
+    top: 55px;
+}
+
+/* header.flex nav{
+    background-color: rgb(236, 226, 150);
+    border-radius: 30px;
+    padding: 15px 15px;
+    box-shadow: 1px 1px 40px rgb(235, 235, 109);
+
+} */
+header ul.flex{
+    gap: 15px;
+    margin-right: 15px;
+}
+header ul.flex li a{
+    color: rgb(255, 253, 253);
+    opacity: 0.9;
+    font-size:17px ;
+    font-weight:500 ;
+}
+
+header ul.flex li a:hover{
+    color: rgb(228, 179, 54);
+    opacity: 0.9;
+    font-size:17.2px ;
+    font-weight:500 ;
+    text-decoration-line: underline;
+}
+
+header .fixed ul.model li{
+    border-bottom:1px solid gray ;
+    padding: 14px 0px;
+}
+
+header .fixed{
+    position: fixed;
+    inset: 0;
+    background-color: rgb(40, 40, 40);
+}
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.1;}
+    100% {scale: 1;}
+}
+
+header .fixed ul.model{
+    animation: mymove 1s 1;
+    background-color: rgb(23, 22, 22);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: flex;
+    padding: 16px 30px ;
+    flex-direction: column;
+    margin-top: 20px;
+}
+header .fixed ul.model li{
+    border-bottom:1px solid gray ;
+    padding: 14px 0px;
+    color: white;
+}
+header .fixed ul.model a:hover{
+    color: rgb(228, 179, 54);
+    opacity: 0.9;
+    font-size:17.2px ;
+    font-weight:500 ;
+}
+
+header .fixed ul.model li:last-child{
+    border: none;}
+header .fixed ul.model li:first-child{
+        border: none;
+        text-align: right;
+    }
+
+header.flex button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+header.flex button.menu:hover{
+    background: transparent;
+    border: none;
+    color: rgb(228, 179, 54);
+    cursor: pointer;
+}
+
+header.flex button.closemenu:hover{
+    background: transparent;
+    border: none;
+    color: rgb(189, 40, 6);
+    cursor: pointer;
+}
+
+
+header.flex button.menu{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    header.flex nav{display: none;}
+    header.flex button.menu{
+        display:block;
+    }
+}

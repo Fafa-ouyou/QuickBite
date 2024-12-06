@@ -1,0 +1,86 @@
+/* Home.css */
+
+/* Styles généraux */
+.home {
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #262829;
+    min-height: 80vh;
+  }
+  
+  /* Section gauche */
+  .home_left {
+    max-width: 50%;
+  }
+  
+  .home_left h1 {
+    font-size: 4rem;
+    color: #d2d4d7;
+    margin-bottom: 1rem;
+    font-family: "Gill Sans", sans-serif;
+    
+}
+  
+  .home_left p {
+    font-size: 1.2rem;
+    color: #f6f4f4;
+    margin-bottom: 2rem;
+    font-family: cursive;
+  }
+  
+  .home_left button {
+    padding: 0.8rem 1.5rem;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home_left button:hover {
+    background-color: #121210;
+  }
+  
+  /* Section droite */
+  .home_right {
+    max-width: 70%;
+  }
+  
+  .home_right img {
+    width: 400px;
+    max-width: 900px;
+    border-radius: 100px;
+    box-shadow: 9px 9px 40px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home_left {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .home_right {
+      max-width: 100%;
+    }
+  
+    .home_left h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home_left p {
+      font-size: 1rem;
+    }
+  
+    .home_left button {
+      font-size: 0.9rem;
+    }
+  }
+  
